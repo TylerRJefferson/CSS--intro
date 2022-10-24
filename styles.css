@@ -1,0 +1,68 @@
+* {
+  /* color: green; */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+
+body {
+  background-color: greenyellow;
+}
+
+/* id selector */
+#contact {
+  background-color: brown;
+}
+
+p {
+  color: blue;
+}
+
+/* class selectors */
+.my-ps { 
+  background-color: peru;
+}
+.my-width {
+  width: 100px;
+}
+
+li {
+  color: hotpink;
+}
+
+.box {
+  color: white;
+  font-weight: 600;
+  background-color: crimson;
+  /* padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px; */
+  padding: 10px;
+  /* border-color: black;
+  border-style: solid;
+  border-width: 3px; */
+  border: solid 2px black;
+  border-radius: 10px;
+  text-transform: capitalize;
+
+  /* margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px; */
+
+  margin: 10px 20px;
+
+}
+
+footer {
+  background-color: tan;
+  border-radius: 30px;
+}
+
+/* child selectors */
+footer > h3 { 
+  background-color: red;
+}
+footer > ul > li {
+  color: blueviolet;
+}
