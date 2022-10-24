@@ -15,11 +15,24 @@
   }
 
   body {
-    background-color: yellowgreen;
+    background-color: greenyellow;
+  }
+
+  /* id selector */
+  #contact {
+    background-color: brown;
   }
 
   p {
     color: blue;
+  }
+
+  /* class selectors */
+  .my-ps { 
+    background-color: peru;
+  }
+  .my-width {
+    width: 100px;
   }
 
   li {
@@ -29,25 +42,34 @@
   footer {
     background-color: tan;
   }
+  
+  /* child selectors */
+  footer > h3 { 
+    background-color: red;
+  }
+  footer > ul > li {
+    color: blueviolet;
+  }
+
 </style>
 
 <body>
   <header>
     <nav>
-      <ul>
+      <ul class="my-ps my-width">
         <li style="color: #3ad353;
           font-size: x-large;
           letter-spacing: 3px;
           background-color: silver;">About</li>
         <li>Services</li>
-        <li>Contact</li>
+        <li id="contact">Contact</li>
       </ul>
     </nav>
   </header>
-  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, nihil consequatur rem nostrum provident quas odio
+  <p class="my-ps">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, nihil consequatur rem nostrum provident quas odio
     consequuntur neque minima delectus illum officiis, quaerat illo sapiente accusantium, saepe voluptas libero
     temporibus!</p>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit expedita libero culpa iusto, recusandae error
+  <p class="my-ps">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit expedita libero culpa iusto, recusandae error
     tempore atque nisi! Maxime quibusdam assumenda earum vero dolores! Quis, voluptatum dolor. Temporibus, quaerat
     eos. Dignissimos iusto aperiam odit at voluptatum dolores nulla, nemo, reiciendis ratione incidunt
     assumenda. Assumenda rerum at, pariatur facilis voluptatem dolorem quasi quae consequuntur eum nam? Nam hic magnam
@@ -58,7 +80,9 @@
     delectus laudantium magni. Obcaecati temporibus asperiores nostrum beatae dicta. Assumenda illum iusto
     tempora? Iusto quam iste numquam fugiat temporibus mollitia tempora asperiores adipisci impedit natus ea amet
     magni quos deserunt excepturi voluptatum, maxime eum. Nesciunt unde eum iure perferendis?</p>
+  <h3>Another h3</h3>
   <footer>
+    <h3>Hi mom! This is my CSS</h3>
     <ul>
       <li>About</li>
       <li>Services</li>
